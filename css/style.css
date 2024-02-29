@@ -1,3 +1,32 @@
 .ds-debug{
     border: 1px solid red;
 }
+
+body{
+    font-family: "Roboto", sans-serif ;
+}
+
+#wrapper{
+    height: 100vh;
+}
+header{
+    background-color: #F8F9FA;
+    height: 90px;
+}
+.ds-container{
+    height: calc(100% - 90px);
+    /* background-color: red; */
+
+}
+#sidebar{
+    width: 200px;
+    background-color: violet;
+}
+main{
+    width: calc(100% - 200px);
+    overflow-y: auto;
+}
+.ds-blue{
+    background-color: blue;
+    height: 70px;
+}
