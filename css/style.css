@@ -13,24 +13,6 @@ body{
     height: 100vh;
 }
 
-.ds-container{
-    height: calc(100% - 90px);
-    /* background-color: red; */
-
-}
-#sidebar{
-    width: 200px;
-    background-color: violet;
-}
-main{
-    width: calc(100% - 200px);
-    overflow-y: auto;
-}
-.ds-blue{
-    background-color: blue;
-    height: 70px;
-}
-
 /* HEADER */
 header{
     background-color: #F8F9FA;
@@ -69,8 +51,9 @@ main{
     background-color: blue;
     height: 70px;
 }
-/* .ds-date, .ds-roi, .ds-state, .ds-action{
-} */
+th{
+    font-weight: normal;
+}
 th:not(:first-child), td:not(:first-child){
     width: 120px;
     text-align: center;
@@ -98,7 +81,8 @@ td:first-child{
 
 #sidebar{
     width: 200px;
-    background-color: violet;
+    background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
 }
 
 /* ************************** */
