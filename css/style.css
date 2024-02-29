@@ -39,3 +39,12 @@ main{
 .ds-font-special{
     font-family: "Roboto", "FontAwesome", sans-serif;
 }
+
+/* header */
+header a {
+    color: #5B5858;
+    text-decoration: none;
+}
+ .fa-bell{
+    color: #FF8F02;
+ }
