@@ -13,7 +13,7 @@ body{
     height: 100vh;
 }
 header{
-    background-color: #43505e;
+    background-color: #F8F9FA;
     height: 90px;
 }
 .ds-container{
@@ -33,8 +33,11 @@ main{
     background-color: blue;
     height: 70px;
 }
-.ds-logo, .ds-nav-buttons{
-    width: 200px ;
+.ds-logo{
+    min-width: 200px ;
+}
+.ds-nav-buttons{
+    min-width: 50px;
 }
 .ds-font-special{
     font-family: "Roboto", "FontAwesome", sans-serif;
