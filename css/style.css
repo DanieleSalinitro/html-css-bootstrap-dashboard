@@ -59,9 +59,10 @@ th:not(:first-child), td:not(:first-child){
     text-align: center;
 
 }
-td:first-child{
+td div:first-child{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .ds-code-table{
@@ -74,6 +75,7 @@ td:first-child{
     aspect-ratio: 1 / 1;
     border: 1px solid #6C757D;
     border-radius: 5px;
+    justify-content: center;
 }
 /* ************************** */
 
@@ -84,5 +86,40 @@ td:first-child{
     background-color: #051E34;
     background-image: url(../img/sidebar-bg.png);
 }
+#sidebar a {
+    color: white;
+    text-decoration: none;
+    width: 10%;
+}
+#sidebar span{
+    color: white;
+    cursor: pointer;
+}
+#sidebar .d-flex.align-items-center.gap-3:hover{
+    background-color: #ffffff80;
+}
+
+/* ************************** */
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    th:nth-child(2),
+    th:nth-child(3),
+    td:nth-child(2), 
+    td:nth-child(3) {
+        display: none;
+    }
+    #sidebar span{
+        display: none;
+    }
+    #sidebar{
+        width: 80px;
+    }
+    main{
+        width: calc(100% - 80px);
+    }
+}
+
+
 
 /* ************************** */
