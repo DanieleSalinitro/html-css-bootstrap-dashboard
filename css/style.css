@@ -40,16 +40,21 @@ header a {
 
 .ds-container{
     height: calc(100% - 90px);
-    /* background-color: red; */
-
 }
 main{
     width: calc(100% - 200px);
     overflow-y: auto;
 }
-.ds-blue{
-    background-color: blue;
-    height: 70px;
+#top-bar{
+    padding: 20px 25px;
+}
+.ds-button{
+    width: 50px; 
+    aspect-ratio: 1 / 1;
+    font-size: 1.5em;
+}
+.ds-ocanvas{
+    width: 100% !important;
 }
 th{
     font-weight: normal;
@@ -69,14 +74,7 @@ td div:first-child{
     width: 30px;
     background-color: white;
 }
-.ds-rounded{
-    width: 30px;
-    color: #6C757D;
-    aspect-ratio: 1 / 1;
-    border: 1px solid #6C757D;
-    border-radius: 5px;
-    justify-content: center;
-}
+
 /* ************************** */
 
 /* SIDEBAR */
@@ -103,10 +101,10 @@ td div:first-child{
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
-    th:nth-child(2),
-    th:nth-child(3),
-    td:nth-child(2), 
-    td:nth-child(3) {
+    main table th:nth-child(2),
+    main table th:nth-child(3),
+    main table td:nth-child(2), 
+    main table td:nth-child(3) {
         display: none;
     }
     #sidebar span{
@@ -120,6 +118,11 @@ td div:first-child{
     }
 }
 
+@media screen and (min-width: 768px){
+    main .offcanvas{
+        max-width: 45%;
+    }    
+}
 
 
 /* ************************** */

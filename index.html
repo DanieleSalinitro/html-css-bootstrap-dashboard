@@ -82,8 +82,122 @@
                 </div>
             </div>
             <main>
-                <div class="ds-blue">
-                    blue
+                <div id="top-bar" class="bg-primary">
+                    <div class="container-fluid">
+                        <div class="row" style="color: white;">
+                            <div class="col-12 col-md-4 col-lg-6">
+                                <div class="d-flex align-items-center ">
+                                    <div>Nuovo Studente</div>
+                                    <div>
+                                        <button type="button" class="ds-button btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                            +
+                                        </button>
+                                        <div class="ds-ocanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                            <div class="offcanvas-header">
+                                              <h5 class="fw-normal ">Inserisci un nuovo studente</h5>
+                                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="mb-3">
+                                                                <label for="name" class="form-label">Nome</label>
+                                                                <input type="name" class="form-control" id="name">
+                                                            </div>  
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="mb-3">
+                                                                <label for="surname1" class="form-label">Cognome</label>
+                                                                <input type="surname" class="form-control" id="surname1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <label for="email1" class="form-label">
+                                                                Email
+                                                            </label>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                                <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="mb-3">
+                                                                <label for="password1" class="form-label">Password</label>
+                                                                <input type="password" class="form-control" id="password1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <label for="email1" class="form-label">
+                                                                Email
+                                                            </label>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                                <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="mb-3">
+                                                                <label for="password1" class="form-label">Password</label>
+                                                                <input type="password" class="form-control" id="password1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="mb-3">
+                                                                <label for="address1" class="form-label">Indirizzo</label>
+                                                                <input type="address" class="form-control" id="address1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6">
+                                                            <div class="mb-3">
+                                                                <label for="city1" class="form-label">Città</label>
+                                                                <input type="city" class="form-control" id="city1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-4">
+                                                            <label for="country1" class="form-label">Stato</label>
+                                                            <div class="mb-3">
+                                                                <select class="form-select" aria-label="Default select example">
+                                                                    <option selected>Scegli...</option>
+                                                                    <option value="1">Italia</option>
+                                                                    <option value="2">Francia</option>
+                                                                    <option value="3">Germania</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 col-md-2">
+                                                            <div class="mb-3">
+                                                                <label for="zip1" class="form-label">CAP</label>
+                                                                <input type="zip" class="form-control" id="zip1">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    
+                                                    <div class="mb-3">
+                                                        <label for="photo1" class="form-label">Foto</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                    <div class="mb-3 form-check">
+                                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                      <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                                                    </div>
+                                                    <button type="save" class="btn btn-primary">Salva</button>
+                                                    <button type="empty" class="btn btn-warning ">Svuota</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-2 col-xl-3">
+                                center
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4 col-xl-3">
+                                right
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="container-fluid p-4">
                     <div class="row">
@@ -118,10 +232,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="d-flex justify-content-center ">
-                                                        <div class="ds-rounded me-2 "><i
-                                                                class="fa-solid fa-pencil align-middle  "></i></div>
-                                                        <div class="ds-rounded"><i
-                                                                class="fa-solid fa-trash align-middle"></i></div>
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil align-middle"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash align-middle"></i></button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -140,11 +252,9 @@
                                                     <button type="button" class="btn btn-success">Done</button>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="ds-rounded me-2 "><i
-                                                                class="fa-solid fa-pencil align-middle  "></i></div>
-                                                        <div class="ds-rounded"><i
-                                                                class="fa-solid fa-trash align-middle"></i></div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil align-middle"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash align-middle"></i></button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -164,11 +274,9 @@
                                                         class="btn btn-warning text-white ">Process</button>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="ds-rounded me-2 "><i
-                                                                class="fa-solid fa-pencil align-middle  "></i></div>
-                                                        <div class="ds-rounded"><i
-                                                                class="fa-solid fa-trash align-middle"></i></div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil align-middle"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash align-middle"></i></button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -187,11 +295,9 @@
                                                     <button type="button" class="btn btn-success">Done</button>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="ds-rounded me-2 "><i
-                                                                class="fa-solid fa-pencil align-middle  "></i></div>
-                                                        <div class="ds-rounded"><i
-                                                                class="fa-solid fa-trash align-middle"></i></div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil align-middle"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash align-middle"></i></button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -210,11 +316,9 @@
                                                     <button type="button" class="btn btn-danger">Failed</button>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="ds-rounded me-2 "><i
-                                                                class="fa-solid fa-pencil align-middle  "></i></div>
-                                                        <div class="ds-rounded"><i
-                                                                class="fa-solid fa-trash align-middle"></i></div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil align-middle"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash align-middle"></i></button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -233,11 +337,9 @@
                                                     <button type="button" class="btn btn-success">Done</button>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="ds-rounded me-2 "><i
-                                                                class="fa-solid fa-pencil align-middle  "></i></div>
-                                                        <div class="ds-rounded"><i
-                                                                class="fa-solid fa-trash align-middle"></i></div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil align-middle"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash align-middle"></i></button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -256,11 +358,9 @@
                                                     <button type="button" class="btn btn-danger">Failed</button>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="ds-rounded me-2 "><i
-                                                                class="fa-solid fa-pencil align-middle  "></i></div>
-                                                        <div class="ds-rounded"><i
-                                                                class="fa-solid fa-trash align-middle"></i></div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil align-middle"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash align-middle"></i></button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -279,11 +379,9 @@
                                                     <button type="button" class="btn btn-success">Done</button>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="ds-rounded me-2 "><i
-                                                                class="fa-solid fa-pencil align-middle  "></i></div>
-                                                        <div class="ds-rounded"><i
-                                                                class="fa-solid fa-trash align-middle"></i></div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil align-middle"></i></button>
+                                                        <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash align-middle"></i></button>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -383,7 +481,7 @@
                                 </ul>
                             </div>
                             <div class="card p-4">
-                                <ul class="list-group">
+                                <ul class="list-group rounded">
                                     <li class="list-group-item">
                                         <img src="img/stats.jpeg" alt="">
                                         <h5>Utenti attivi</h5>
